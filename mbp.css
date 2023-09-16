@@ -1,0 +1,19 @@
+.divv{
+    background-color:orange;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+display: inline-block;
+}
+
+
+.container{
+    background-color: red;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+body{
+    height: auto;
+    overflow: hidden;
+}
