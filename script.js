@@ -39,3 +39,26 @@
 // function z(s) {
 //     return s + "xxxxxx";
 // }
+var ar = [1, 2, 3, 4, 5];
+function mainFunction(callback) {
+    console.log("Performing operation...");
+    // Use setTimeout to simulate an asynchronous operation
+    ar.forEach((x) => callback(x))
+}
+
+// Define the callback function
+function callbackFunction(result, callback) {
+    console.log("Result: " + result);
+    callback(result)
+}
+function sum(result) {
+    console.log(result)
+}
+
+// Call the main function with the callback function
+mainFunction(function (x) {
+    callbackFunction(x, function () {
+        sum(x);
+    });
+});
+//This code is contributed by Veerendra Singh Rajpoot
